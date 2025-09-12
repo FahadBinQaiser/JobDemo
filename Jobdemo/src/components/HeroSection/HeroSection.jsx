@@ -18,14 +18,14 @@ export default function HeroSection() {
           <a href="#" className="text-white hover:text-green-400 transition-colors">FAQs</a>
           <a href="#" className="text-white hover:text-green-400 transition-colors">Contact</a>
         </nav>
-                <div className="relative flex items-center bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
+                <div className="relative flex items-center cursor-pointer bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
         <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-500 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
 
         <div className="relative z-10 flex items-center justify-center w-12 h-12">
             <img src="/cart.png" alt="cart" className="w-5 h-5" />
         </div>
 
-        <button className="relative z-10 transition-colors duration-500 group-hover:text-white">
+        <button className="relative transition-colors cursor-pointer duration-500 group-hover:text-white">
             Try Now
         </button>
         </div>
