@@ -13,10 +13,10 @@ export default function HeroSection() {
         </div>
 
         <nav className="hidden md:flex items-center gap-8">
-          <a href="#" className="text-white hover:text-green-400 transition-colors">About</a>
-          <a href="#" className="text-white hover:text-green-400 transition-colors">Features</a>
-          <a href="#" className="text-white hover:text-green-400 transition-colors">FAQs</a>
-          <a href="#" className="text-white hover:text-green-400 transition-colors">Contact</a>
+          <a href="#" className="text-white hover:text-[#00BB77] transition-colors">About</a>
+          <a href="#" className="text-white hover:text-[#00BB77] transition-colors">Features</a>
+          <a href="#" className="text-white hover:text-[#00BB77] transition-colors">FAQs</a>
+          <a href="#" className="text-white hover:text-[#00BB77] transition-colors">Contact</a>
         </nav>
                 <div className="relative flex items-center cursor-pointer bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
         <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-500 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
