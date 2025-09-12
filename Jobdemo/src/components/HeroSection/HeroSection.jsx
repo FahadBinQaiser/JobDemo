@@ -18,18 +18,19 @@ export default function HeroSection() {
           <a href="#" className="text-white hover:text-green-400 transition-colors">FAQs</a>
           <a href="#" className="text-white hover:text-green-400 transition-colors">Contact</a>
         </nav>
+                <div className="relative flex items-center bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
+        <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-500 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
 
-        <button className="flex items-center gap-2 bg-white text-black px-6 py-3 rounded-full font-medium hover:bg-gray-100 transition-colors">
-          <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-            <path
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              strokeWidth={2}
-              d="M3 3h2l.4 2M7 13h10l4-8H5.4m0 0L7 13m0 0l-2.5 5M7 13l2.5 5m6-5v6a2 2 0 11-4 0v-6m4 0V9a2 2 0 10-4 0v4.01"
-            />
-          </svg>
-          Try Now
+        <div className="relative z-10 flex items-center justify-center w-12 h-12">
+            <img src="/cart.png" alt="cart" className="w-5 h-5" />
+        </div>
+
+        <button className="relative z-10 transition-colors duration-500 group-hover:text-white">
+            Try Now
         </button>
+        </div>
+
+
       </header>
 
       <div className="flex justify-center">
