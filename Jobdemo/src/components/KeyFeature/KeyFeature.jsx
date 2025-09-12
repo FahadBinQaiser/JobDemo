@@ -77,7 +77,6 @@ export default function KeyFeature() {
 
   return (
     <>
-      {/* Desktop Version */}
       <div className="parallax hidden sm:flex flex-col min-h-screen py-14 px-10">
         <div className="max-w-7xl mx-auto space-y-7">
           <div className="content flex flex-col space-y-4 max-w-5xl">
@@ -119,9 +118,7 @@ export default function KeyFeature() {
         </div>
       </div>
 
-      {/* Mobile Version */}
       <div className="flex sm:hidden flex-col min-h-screen py-8 px-4 bg-black">
-        {/* Header Section */}
         <div className="flex flex-col space-y-4 mb-8">
           <button className="w-[120px] h-[30px] bg-[#00BB77] text-black rounded-full text-sm">
             Whats the best
@@ -132,14 +129,12 @@ export default function KeyFeature() {
           </p>
         </div>
 
-        {/* Scrollable cards */}
         <div className="flex flex-row gap-4 overflow-x-scroll pb-4 snap-x snap-mandatory scrollbar-hide">
           {mobileCards.map((text, idx) => (
             <MobileCard key={idx} text={text} />
           ))}
         </div>
 
-        {/* Add some spacing at the end */}
         <div className="w-4 flex-shrink-0"></div>
       </div>
     </>
