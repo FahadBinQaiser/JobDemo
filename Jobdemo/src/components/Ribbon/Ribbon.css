@@ -8,10 +8,10 @@
 }
 
 .animate-scroll-left {
-  animation: scroll-left 20s linear infinite;
+  animation: scroll-left 30s linear infinite;
 }
 
 .animate-scroll-left-delayed {
-  animation: scroll-left 20s linear infinite;
-  animation-delay: -10s;
+  animation: scroll-left 30s linear infinite;
+  animation-delay: -15s;
 }
