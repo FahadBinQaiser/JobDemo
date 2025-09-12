@@ -11,7 +11,7 @@ export default function Ribbon() {
   ]
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-2 hidden md:block">
       <div className="relative overflow-hidden bg-[#166E4E] h-12 flex items-center">
         
         <div className="pointer-events-none absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-[#166E4E] to-transparent z-10" />
