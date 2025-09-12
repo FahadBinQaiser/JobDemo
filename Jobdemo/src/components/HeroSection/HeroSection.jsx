@@ -21,7 +21,7 @@ export default function HeroSection() {
           </nav>
 
           <div className="hidden md:flex relative items-center cursor-pointer bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
-            <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-500 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
+            <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
 
             <div className="relative z-10 flex items-center justify-center w-12 h-12">
               <img src="/cart.png" alt="cart" className="w-5 h-5" />
@@ -32,9 +32,9 @@ export default function HeroSection() {
             </button>
           </div>
 
-          <div className="flex items-center gap-3 md:hidden">
-            <div className="flex relative items-center cursor-pointer bg-white text-black rounded-full w-[140px] pr-6 gap-4 overflow-hidden group">
-            <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-500 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
+          <div className="flex items-center gap-4 md:hidden">
+            <div className="flex relative items-center cursor-pointer bg-white text-black rounded-full w-[140px] transition duration-150 hover:scale-120 pr-6 gap-4 overflow-hidden group">
+            <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-300ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
 
             <div className="relative z-10 flex items-center justify-center w-12 h-12">
               <img src="/cart.png" alt="cart" className="w-5 h-5" />
