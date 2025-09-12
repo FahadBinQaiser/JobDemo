@@ -6,3 +6,12 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.overflow-x-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.overflow-x-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
