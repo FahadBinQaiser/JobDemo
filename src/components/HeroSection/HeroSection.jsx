@@ -5,7 +5,7 @@ export default function HeroSection() {
   return (
     <div className="bg-black">
       <div className="herosection min-h-screen text-white">
-        <header className="flex items-center justify-between px-3 py-6">
+        <header className="flex items-center justify-between px-3 sm:px-8 py-6">
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 sm:w-10 sm:h-10">
               <img src="/logo/Logomark.png" alt="CirriNote" />
