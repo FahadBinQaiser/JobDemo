@@ -131,7 +131,7 @@ export default function Header() {
         </div>
 
         <div
-          className={`fixed top-0 right-0 w-screen h-screen bg-black backdrop-blur-lg flex flex-col items-start pt-24 pl-8 gap-8 md:hidden transition-transform duration-500 transform z-40 ${
+          className={`fixed top-0 right-0 h-screen w-full bg-black backdrop-blur-lg flex flex-col items-start pt-24 pl-8 gap-8 md:hidden transition-transform duration-500 transform z-40 ${
             mobileOpen ? "translate-x-0" : "translate-x-full"
           }`}
         >
