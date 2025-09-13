@@ -71,7 +71,7 @@ export default function KeyFeature() {
       },
       "Our creativity in Design",
     ],
-    ["Unique analytics of our growth", "Smooth UI functioned websites"],
+    ["Unique analytics of our growth", "Smooth UI websites"],
   ];
 
   const mobileCards = [
@@ -80,7 +80,7 @@ export default function KeyFeature() {
     "Apply before other applicants",
     "Our creativity in Design",
     "Unique analytics of our growth",
-    "Smooth UI functioned websites",
+    "Smooth UI websites",
   ];
 
   return (
