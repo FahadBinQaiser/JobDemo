@@ -2,7 +2,7 @@ import React from "react";
 import "./KeyFeature.css";
 
 const boxClasses =
-  "w-[350px] h-[320px] group relative text-balance rounded-2xl bg-[#1C1C1C] font-medium p-6 flex text-4xl px-8 pb-16 justify-start items-end overflow-hidden transition-all duration-500 hover:border border-[#00BB77]";
+  "w-[360px] h-[320px] group relative text-balance rounded-2xl bg-[#1C1C1C] font-medium p-6 flex text-4xl px-8 pb-16 justify-start items-end overflow-hidden transition-all duration-500 hover:border border-[#00BB77]";
 
 const Arrow = () => (
   <svg
@@ -67,7 +67,7 @@ export default function KeyFeature() {
         heading:
           "Creative people worldwide rely on this app to craft ideas into digital magic.",
         span: 2,
-        custom: "text-6xl max-w-3xl",
+        custom: "text-6xl max-w-4xl",
       },
       "Our creativity in Design",
     ],
@@ -116,20 +116,15 @@ export default function KeyFeature() {
                   return (
                     <div
                       key={j}
-                      className={`col-span-${cell.span} ${cell.custom} text-white`}
+                      className={`col-span-${cell.span} ${cell.custom} text-white flex justify-start items-center`}
                     >
-                      {cell.heading.split(" into ").map((part, idx) =>
-                        idx === 1 ? (
-                          <span key={idx}>
-                            into{" "}
-                            <span className="highlight text-[#00BB77]">
-                              {part}
-                            </span>
-                          </span>
-                        ) : (
-                          <span key={idx}>{part}</span>
-                        )
-                      )}
+                      <div className="text-5xl text-left leading-tight text-[#FFFFFF80]">
+                        Creative people worldwide rely on this app to craft
+                        ideas into{" "}
+                        <span className="highlight text-[#00BB77]">
+                          digital magic.
+                        </span>
+                      </div>
                     </div>
                   );
                 }
@@ -141,7 +136,7 @@ export default function KeyFeature() {
         </div>
       </div>
 
-      <div className="flex sm:hidden flex-col min-h-screen py-8 px-4 bg-black">
+      <div className="flex sm:hidden  flex-col min-h-screen py-8 px-4 bg-black">
         <div className="flex flex-col space-y-4 mb-8">
           <button className="w-[120px] h-[30px] bg-[#00BB77] text-black rounded-full text-sm">
             Whats the best
