@@ -85,7 +85,7 @@ export default function KeyFeature() {
 
   return (
     <>
-      <div className="parallax hidden sm:flex flex-col min-h-screen pt-14 px-10">
+      <div className="parallax hidden sm:flex flex-col min-h-screen py-14 px-10">
         <div className="max-w-6xl mx-auto space-y-7">
           <div className="content flex flex-col space-y-4 max-w-5xl">
             <button className="w-[120px] h-[30px] bg-[#00BB77] text-black rounded-full text-sm">
