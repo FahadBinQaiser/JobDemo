@@ -5,7 +5,6 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  // Handle scroll for sticky navbar
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
