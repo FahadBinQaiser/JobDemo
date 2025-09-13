@@ -39,7 +39,7 @@ export default function Header() {
       <header
         className={`sticky top-0 w-full flex items-center justify-between px-3 sm:px-8 py-6 transition-all duration-300 z-50 ${
           scrolled
-            ? "bg-[#1c1c1c] backdrop-blur-md"
+            ? "bg-[#1c1c1c]/90 backdrop-blur-md"
             : "bg-black backdrop-blur-md"
         }`}
       >
