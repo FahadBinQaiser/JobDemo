@@ -17,25 +17,25 @@ export default function HeroSection() {
 
           <nav className="hidden md:flex items-center gap-8">
             <a
-              href="#"
+              href="#about"
               className="text-white hover:text-[#00BB77] transition-colors"
             >
               About
             </a>
             <a
-              href="#"
+              href="#features"
               className="text-white hover:text-[#00BB77] transition-colors"
             >
               Features
             </a>
             <a
-              href="#"
+              href="#contact"
               className="text-white hover:text-[#00BB77] transition-colors"
             >
               FAQs
             </a>
             <a
-              href="#"
+              href="#contact"
               className="text-white hover:text-[#00BB77] transition-colors"
             >
               Contact

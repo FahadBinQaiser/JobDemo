@@ -1,7 +1,10 @@
 import React from "react";
 export default function Note() {
   return (
-    <section className="h-full flex flex-col items-center justify-center px-6 py-20 relative">
+    <section
+      id="about"
+      className="h-full flex flex-col items-center justify-center px-6 py-20 relative"
+    >
       <div className="absolute inset-0 bg-black/90 bg-opacity-60"></div>
 
       <div className="max-w-4xl mx-auto text-center space-y-12 relative z-10">
