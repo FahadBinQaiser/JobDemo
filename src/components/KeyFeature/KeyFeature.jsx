@@ -136,7 +136,7 @@ export default function KeyFeature() {
         </div>
       </div>
 
-      <div className="flex sm:hidden  flex-col min-h-screen py-8 px-4 bg-black">
+      <div className="flex sm:hidden  pt-20 flex-col min-h-screen py-8 px-4 bg-black">
         <div className="flex flex-col space-y-4 mb-8">
           <button className="w-[120px] h-[30px] bg-[#00BB77] text-black rounded-full text-sm">
             Whats the best
