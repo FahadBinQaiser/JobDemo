@@ -120,7 +120,7 @@ export default function KeyFeature() {
                     >
                       <div className="text-5xl w-full text-left leading-tight text-[#FFFFFF80]">
                         Creative people worldwide rely on this app to craft
-                        ideas into{" "}
+                        ideas into
                         <span className="highlight text-[#00BB77]">
                           digital magic.
                         </span>
