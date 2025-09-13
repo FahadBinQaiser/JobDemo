@@ -3,7 +3,7 @@ import React from "react";
 const Footer = () => {
   return (
     <>
-      <footer className="hidden sm:flex bg-[#1C1C1C] text-white py-16 px-10">
+      <footer className="hidden border-t border-[#1C1C1C] sm:flex bg-[#1C1C1C] text-white py-16 px-10">
         <div className="max-w-7xl mx-auto w-full flex justify-between items-center">
           <div className="flex flex-col space-y-2">
             <div className="flex items-center space-x-2">
