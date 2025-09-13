@@ -1,5 +1,5 @@
-import React from "react"
-import './Ribbon.css'
+import React from "react";
+import "./Ribbon.css";
 
 export default function Ribbon() {
   const bannerText = [
@@ -8,12 +8,11 @@ export default function Ribbon() {
     "Join the launch event",
     "Get one year FREE",
     "Only for limited users",
-  ]
+  ];
 
   return (
     <div className="space-y-2 hidden md:block">
       <div className="relative overflow-hidden bg-[#166E4E] h-12 flex items-center">
-        
         <div className="pointer-events-none absolute left-0 top-0 h-full w-40 bg-gradient-to-r from-[#166E4E] to-transparent z-10" />
 
         <div className="pointer-events-none absolute right-0 top-0 h-full w-40 bg-gradient-to-l from-[#166E4E] to-transparent z-10" />
@@ -32,5 +31,5 @@ export default function Ribbon() {
         </div>
       </div>
     </div>
-  )
+  );
 }
