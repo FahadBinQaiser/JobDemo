@@ -1,11 +1,27 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./HeroSection.css";
 
 export default function HeroSection() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 50);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <div className="bg-black">
       <div className="herosection min-h-screen text-white">
-        <header className="flex items-center justify-between px-3 sm:px-8 py-6">
+        <header
+          className={`flex items-center justify-between px-3 sm:px-8 py-6 transition-all duration-300 ${
+            scrolled
+              ? "sticky top-0 bg-[#1c1c1c] bg-opacity-90 z-50"
+              : "relative"
+          }`}
+        >
           <div className="flex items-center gap-2">
             <div className="w-7 h-7 sm:w-10 sm:h-10">
               <img src="/logo/Logomark.png" alt="CirriNote" />
@@ -44,11 +60,9 @@ export default function HeroSection() {
 
           <div className="hidden md:flex relative items-center cursor-pointer bg-white text-black rounded-full w-[167px] pr-6 gap-4 overflow-hidden group">
             <div className="absolute inset-y-1 left-1 h-10 w-10 bg-black rounded-full transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
-
             <div className="relative z-10 flex items-center justify-center w-12 h-12">
               <img src="/cart.png" alt="cart" className="w-5 h-5" />
             </div>
-
             <button className="relative transition-colors cursor-pointer duration-500 group-hover:text-white">
               Try Now
             </button>
@@ -57,11 +71,9 @@ export default function HeroSection() {
           <div className="flex items-center gap-4 md:hidden">
             <div className="flex relative items-center cursor-pointer bg-white text-black rounded-full w-[130px] transition duration-150 hover:scale-120 pr-2 gap-4 overflow-hidden group">
               <div className="absolute inset-y-1 left-1 h-8 w-8 bg-black rounded-full transition-all duration-300 ease-in-out group-hover:w-[calc(100%-0.5rem)]"></div>
-
               <div className="relative z-10 flex items-center justify-center w-10 h-10 sm:w-12 sm:h-12">
                 <img src="/cart.png" alt="cart" className="w-4 h-4" />
               </div>
-
               <button className="relative transition-colors cursor-pointer duration-500 group-hover:text-white text-sm">
                 Try Now
               </button>
