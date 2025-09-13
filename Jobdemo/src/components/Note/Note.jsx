@@ -20,8 +20,9 @@ export default function Note() {
 
         <p className="text-xl md:text-xl text-white max-w-2xl mx-auto">
           Creators around the planet use this app
-          <br />
-          for creating <span className="text-green-400">magic</span>
+          <span className="sm:block">
+            for creating <span className="text-green-400">magic</span>
+          </span>
         </p>
       </div>
     </section>
