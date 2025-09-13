@@ -12,14 +12,14 @@ const Footer = () => {
               </div>
               <span className="text-white text-xl font-medium">CirriNote</span>
             </div>
-            <p className="text-gray-400 pt-8 text-sm">© CirriNote 2025</p>
+            <p className="text-[#7C7C7C] pt-8 text-sm">© CirriNote 2025</p>
           </div>
 
           <div className="flex flex-col items-end space-y-4">
             <div className="flex items-center space-x-4">
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-500 transition-colors"
+                className="text-white hover:text-green-500 transition-colors"
               >
                 <svg
                   className="w-6 h-6 text-white bg-transparent"
@@ -32,7 +32,7 @@ const Footer = () => {
 
               <a
                 href="#"
-                className="text-gray-400 hover:text-green-500 transition-colors"
+                className="text-white hover:text-green-500 transition-colors"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a href="#" className="text-gray-400">
+              <a href="#" className="text-white">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
@@ -57,7 +57,7 @@ const Footer = () => {
               </a>
             </div>
 
-            <p className="text-gray-400 pt-8 text-sm">
+            <p className="text-[#7C7C7C] pt-8 text-sm">
               Crafted with passion by CreoWis
             </p>
           </div>
