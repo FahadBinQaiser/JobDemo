@@ -2,7 +2,7 @@ import React from "react";
 import "./KeyFeature.css";
 
 const boxClasses =
-  "w-[450px] h-[320px] group relative text-balance rounded-2xl bg-[#1C1C1C] font-medium p-6 flex text-4xl px-8 pb-16 justify-start items-end overflow-hidden transition-all duration-500 hover:border border-[#00BB77]";
+  "w-[350px] h-[320px] group relative text-balance rounded-2xl bg-[#1C1C1C] font-medium p-6 flex text-4xl px-8 pb-16 justify-start items-end overflow-hidden transition-all duration-500 hover:border border-[#00BB77]";
 
 const Arrow = () => (
   <svg
@@ -11,7 +11,7 @@ const Arrow = () => (
     viewBox="0 0 24 24"
     strokeWidth={1.5}
     stroke="currentColor"
-    className="absolute top-1/2 left-1/2 w-20 h-20 text-white group-hover:text-[#00BB77] transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-300 group-hover:translate-x-32 group-hover:-translate-y-36 group-hover:scale-100"
+    className="absolute top-1/2 left-1/2 w-20 h-20 text-white group-hover:text-[#00BB77] transform -translate-x-1/2 -translate-y-1/2 scale-0 transition-all duration-300 group-hover:translate-x-20 group-hover:-translate-y-36 group-hover:scale-100"
   >
     <path
       strokeLinecap="round"
@@ -24,7 +24,10 @@ const Arrow = () => (
 const Box = ({ text }) => (
   <div className={boxClasses}>
     {text.split("\n").map((line, i) => (
-      <span key={i}>{line}<br /></span>
+      <span key={i}>
+        {line}
+        <br />
+      </span>
     ))}
     <Arrow />
   </div>
@@ -60,10 +63,15 @@ export default function KeyFeature() {
     ["Interview Deadline", null, "Explore more about us"],
     [null, "Apply before other applicants", null],
     [
-      { heading: "Creative people worldwide rely on this app to craft ideas into digital magic.", span: 2, custom: "text-6xl max-w-3xl" },
-      "Our creativity in Design"
+      {
+        heading:
+          "Creative people worldwide rely on this app to craft ideas into digital magic.",
+        span: 2,
+        custom: "text-6xl max-w-3xl",
+      },
+      "Our creativity in Design",
     ],
-    ["Unique analytics of our growth", "Smooth UI functioned websites"]
+    ["Unique analytics of our growth", "Smooth UI functioned websites"],
   ];
 
   const mobileCards = [
@@ -72,36 +80,51 @@ export default function KeyFeature() {
     "Apply before other applicants",
     "Our creativity in Design",
     "Unique analytics of our growth",
-    "Smooth UI functioned websites"
+    "Smooth UI functioned websites",
   ];
 
   return (
     <>
       <div className="parallax hidden sm:flex flex-col min-h-screen py-14 px-10">
-        <div className="max-w-7xl mx-auto space-y-7">
+        <div className="max-w-5xl mx-auto space-y-7">
           <div className="content flex flex-col space-y-4 max-w-5xl">
             <button className="w-[120px] h-[30px] bg-[#00BB77] text-black rounded-full text-sm">
               Whats the best
             </button>
-            <h1 className="text-5xl md:text-7xl text-white font-medium">Key Features</h1>
+            <h1 className="text-5xl md:text-7xl text-white font-medium">
+              Key Features
+            </h1>
             <p className="text-[#FFFFFF80]">
               We're proud to announce the features{" "}
-              <span className="sm:block">that empower creatives every day.</span>
+              <span className="sm:block">
+                that empower creatives every day.
+              </span>
             </p>
           </div>
 
           {gridData.map((row, i) => (
-            <div key={i} className={`grid grid-cols-3 gap-24 text-white ${i === 2 ? "relative" : ""}`}>
+            <div
+              key={i}
+              className={`grid grid-cols-3 gap-24 text-white ${
+                i === 2 ? "relative" : ""
+              }`}
+            >
               {row.map((cell, j) => {
                 if (!cell) return <div key={j}></div>;
 
                 if (typeof cell === "object" && cell.heading) {
                   return (
-                    <div key={j} className={`col-span-${cell.span} ${cell.custom} text-white`}>
+                    <div
+                      key={j}
+                      className={`col-span-${cell.span} ${cell.custom} text-white`}
+                    >
                       {cell.heading.split(" into ").map((part, idx) =>
                         idx === 1 ? (
                           <span key={idx}>
-                            into <span className="highlight text-[#00BB77]">{part}</span>
+                            into{" "}
+                            <span className="highlight text-[#00BB77]">
+                              {part}
+                            </span>
                           </span>
                         ) : (
                           <span key={idx}>{part}</span>
@@ -125,7 +148,8 @@ export default function KeyFeature() {
           </button>
           <h1 className="text-4xl text-white font-medium">Key Features</h1>
           <p className="text-[#FFFFFF80] text-sm">
-            We're proud to announce the features that empower creatives every day.
+            We're proud to announce the features that empower creatives every
+            day.
           </p>
         </div>
 
