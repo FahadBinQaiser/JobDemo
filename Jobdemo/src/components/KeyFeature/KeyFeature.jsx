@@ -118,9 +118,9 @@ export default function KeyFeature() {
                       key={j}
                       className={`col-span-2 ${cell.custom} text-white flex justify-start items-center`}
                     >
-                      <div className="text-5xl w-full text-left leading-tight text-[#FFFFFF80]">
+                      <div className="text-5xl gap-1 w-full text-left leading-tight text-[#FFFFFF80]">
                         Creative people worldwide rely on this app to craft
-                        ideas into
+                        ideas into <br /> {""}
                         <span className="highlight text-[#00BB77]">
                           digital magic.
                         </span>
