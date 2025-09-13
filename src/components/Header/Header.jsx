@@ -49,7 +49,7 @@ export default function Header() {
           Features
         </a>
         <a
-          href="#contact"
+          href="#faq"
           className="text-white hover:text-[#00BB77] transition-colors"
         >
           FAQs
