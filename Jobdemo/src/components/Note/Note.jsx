@@ -18,7 +18,7 @@ export default function Note() {
           </div>
         </div>
 
-        <p className="text-xl md:text-xl text-white max-w-2xl mx-auto">
+        <p className="text-lg md:text-xl text-white max-w-2xl mx-auto">
           Creators around the planet use this app
           <span className="sm:block">
             for creating <span className="text-green-400">magic</span>
