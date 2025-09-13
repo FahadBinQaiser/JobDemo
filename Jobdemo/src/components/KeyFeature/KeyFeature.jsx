@@ -153,7 +153,10 @@ export default function KeyFeature() {
             <MobileCard key={idx} text={text} />
           ))}
         </div>
-
+        <div className="text-2xl text-left text-pretty text-[#FFFFFF80]">
+          Creative people worldwide rely on this app to craft ideas into{" "}
+          <span className="highlight text-[#00BB77]">digital magic.</span>
+        </div>
         <div className="w-4 flex-shrink-0"></div>
       </div>
     </>
