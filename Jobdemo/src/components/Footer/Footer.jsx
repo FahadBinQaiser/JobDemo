@@ -46,10 +46,7 @@ const Footer = () => {
                 </svg>
               </a>
 
-              <a
-                href="#"
-                className="text-gray-400 hover:text-green-500 transition-colors"
-              >
+              <a href="#" className="text-gray-400">
                 <svg
                   className="w-6 h-6"
                   fill="currentColor"
