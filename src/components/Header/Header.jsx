@@ -3,7 +3,9 @@ import React, { useEffect, useState } from "react";
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [scrollPosition, setScrollPosition] = useState(0);
 
+  // Handle scroll for sticky navbar
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 50);
     window.addEventListener("scroll", handleScroll);
@@ -12,11 +14,24 @@ export default function Header() {
 
   useEffect(() => {
     if (mobileOpen) {
-      document.body.style.overflowY = "hidden";
+      const scrollY = window.scrollY;
+      setScrollPosition(scrollY);
+
+      document.body.style.position = "fixed";
+      document.body.style.top = `-${scrollY}px`;
+      document.body.style.left = "0";
+      document.body.style.right = "0";
+      document.documentElement.style.overflow = "hidden";
     } else {
-      document.body.style.overflowY = "auto";
+      document.body.style.position = "";
+      document.body.style.top = "";
+      document.body.style.left = "";
+      document.body.style.right = "";
+      document.documentElement.style.overflow = "auto";
+
+      window.scrollTo(0, scrollPosition);
     }
-  }, [mobileOpen]);
+  }, [mobileOpen, scrollPosition]);
 
   return (
     <header
